@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robotics-workbench"
+version = "0.1.0"
+description = "LLM Robotics Simulation Workbench"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "pytest>=7.0.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pyright]
+extraPaths = ["src"]
